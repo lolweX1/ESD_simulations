@@ -179,7 +179,6 @@ function draw_speed_curve() {
     for (let i = 0; i <= maxV; i++) {
         let x = leftMargin + (i / maxV) * plotWidth;
         let y = plotHeight - (curve[i] * plotHeight) + 10;
-        console.log(curve[i])
         if (i === 0) histCtx.moveTo(x, y);
         else histCtx.lineTo(x, y);
     }
