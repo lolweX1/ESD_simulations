@@ -23,3 +23,6 @@ function showSection(sect) {
 	}
 	sections[sect].style.display = "block";
 }
+
+let joe = new simple_pendulum(5, 9.81, 15);
+console.log(joe.calculateTime())

@@ -55,8 +55,29 @@
 		<p id="NasaAPODcredits" style="position: relative; display: inline-block; color: white">credits: </p>-->
 	</div>
 	
-	<div id="Chem" style="display: None;">
-		Under Development
+	<div id="Chem" style="display: block; max-width: 1200px; margin: auto; font-family: sans-serif;">
+		<h2>Maxwell-Boltzmann Distribution Simulation</h2>
+
+		<div style="display: flex; gap: 20px; align-items: flex-start;">
+			<!-- Simulation Canvas -->
+			<canvas id="MaxwellBoltzMannDist" style="border: 1px solid black;"></canvas>
+
+			<!-- Graph Canvas -->
+			<canvas id="SpeedHistogram" style="border: 1px solid black;"></canvas>
+		</div>
+
+		<!-- Controls -->
+		<div style="margin-top: 10px;">
+			<label for="tempSlider">Temperature (°K):</label>
+			<input type="range" id="tempSlider" min="1" max="1000" value="500">
+			<span id="tempValue">500</span>
+		</div>
+
+		<div style="margin-top: 10px;">
+			<label for="partSlider">Number of particles:</label>
+			<input type="range" id="partSlider" min="1" max="5000" value="100">
+			<span id="partValue">100</span>
+		</div>
 	</div>
 	<div id="Bio" style="display: None;">
 		Under Development
@@ -86,7 +107,9 @@
 </body>
 	<script src = "Home.js"></script>
 	<script src = "BallBounce.js"></script>
+	<script src = "Physics.js"></script>
 	<script src = "Flashcards.js"></script>
 	<script src = "Cat.js"></script>
+	<script src = "Chemistry.js"></script>
 	<script src = "Index.js"></script>
 </html>
