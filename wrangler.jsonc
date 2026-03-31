@@ -1,0 +1,8 @@
+{
+  "name": "esd-simulations",
+  "compatibility_date": "2026-01-15",
+  "main": "src/index.ts",
+  "assets": {
+    "directory": "./public"
+  }
+}
